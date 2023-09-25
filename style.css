@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* #region Utility */
 :root{
    --sfondo-color: rgb(246, 248, 249);
    --add_section-color: rgb(196, 203, 208);
@@ -18,6 +19,18 @@
    --check-color: rgb(45, 198, 171);
    --rosso-color:rgb(255, 16, 16);
 }
+
+/* #endregion Utility */
+
+body{
+    background-color:var(--sfondo-color)
+}
+
+.inline{
+    display: inline-block;
+}
+
+/* #region header */
 
 .logo_container{
     background-color: white;
@@ -34,16 +47,6 @@
     vertical-align: middle;
 }
 
-body{
-    background-color:var(--sfondo-color)
-}
-
-main{
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 2%;
-}
-
 .testo_logo{
     font-family: Arial;
     font-size: 60px;
@@ -52,28 +55,86 @@ main{
     vertical-align: middle;
 }
 
+/* #endregion header */
+
+/* #region main */
+
+/* #region section nav */
 .nav{
     background-color: white;
     height: 70px;
     padding-left: 60px;
     padding-top: 20px;
+    margin-bottom: 5px;
 }
 
 .add_task{
     height: 30px;
     width: 75px;
-    background-color: rgb(20, 170, 245);
     border-radius: 8%;
+    background-color: var(--add_task-color);
     border: 0;
     color: white;
     font-weight: bold;
 }
 
 .add_section{
+    font-weight: bold;
     height: 30px;
-    width: 85px;
+    width: 100px;
     text-align: center;
     border-radius: 8%;
-    border-color: rgb(196, 203, 208);
+    border-color: var(--add_section-color);
+}
+/* #endregion section nav */
+
+main{
+    width: 70%;
+    margin: 3rem auto;
+}
+
+/* #region section list */
+.list{
+    font-family: arial;
+    background-color: white;
+}
+
+.subtitles{
+    font-weight: bold;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.check{
+    width: 15px;
+    height: 15px;
+    color: var(--check-color);
+    border-style: solid;
+    border-radius: 50%;
+    padding: 1px;
+    border-width: 1px;
+    font-size: small;
+    font-weight: bold;
+    line-height: 12px;
+}
+
+.editorial{
+    height: 20px;
+    width: 60px;
+    border-radius: 30%;
+    background-color:var(--button_blu-color);
+    border: 0;
+    color: white;
     font-weight: bold;
 }
+/* #endregion section list */
+
+
+/* #endregion main */
+
+
+
+
+
+
+
