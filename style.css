@@ -11,7 +11,7 @@
    --nero_testi-color: rgb(67, 72, 81);
    --add_task-color: rgb(20, 170, 245);
    --button_blu-color: rgb(9, 169, 237);
-   --lila-color:(171, 93, 230);
+   --lila-color: rgb(171, 93, 230);
    --verde-color: rgb(44, 198, 171);
    --naranja-color: rgb(255, 155, 0);
    --Magenta-color: rgb(236, 74, 157);
@@ -59,6 +59,12 @@ body{
 
 /* #region main */
 
+main{
+    width: 70%;
+    margin: 3rem auto;
+}
+/* #endregion main */
+
 /* #region section nav */
 .nav{
     background-color: white;
@@ -71,7 +77,7 @@ body{
 .add_task{
     height: 30px;
     width: 75px;
-    border-radius: 8%;
+    border-radius: 5px;
     background-color: var(--add_task-color);
     border: 0;
     color: white;
@@ -83,20 +89,18 @@ body{
     height: 30px;
     width: 100px;
     text-align: center;
-    border-radius: 8%;
+    border-radius: 5px;
     border-color: var(--add_section-color);
 }
 /* #endregion section nav */
 
-main{
-    width: 70%;
-    margin: 3rem auto;
-}
 
 /* #region section list */
-.list{
+.lista_generale{
     font-family: arial;
     background-color: white;
+    color: var(--nero_testi-color);
+    padding-left: 60px;
 }
 
 .subtitles{
@@ -111,26 +115,55 @@ main{
     color: var(--check-color);
     border-style: solid;
     border-radius: 50%;
-    padding: 1px;
+    padding-bottom: 2px;
+    padding-left: 3px;
     border-width: 1px;
-    font-size: small;
+    font-size: x-small;
     font-weight: bold;
-    line-height: 12px;
 }
 
-.editorial{
+.rosso{
+    color: var(--rosso-color);
+}
+
+.font14 {
+    font-size: 14px;
+    padding-bottom: 1rem;
+}
+
+.button_list{
     height: 20px;
     width: 60px;
-    border-radius: 30%;
+    border-radius: 10px;
     background-color:var(--button_blu-color);
     border: 0;
     color: white;
-    font-weight: bold;
+    font-size: x-small;
+}
+
+.lila{
+    background-color: var(--lila-color);
+}
+
+.verde{
+    background-color: var(--verde-color);
+}
+
+.naranja{
+    background-color: var(--naranja-color);
+}
+
+.magenta{
+    background-color: var(--Magenta-color);
+}
+
+.verde_sales{
+    background-color: var(--verde_sales-color);
 }
 /* #endregion section list */
 
 
-/* #endregion main */
+
 
 
 
