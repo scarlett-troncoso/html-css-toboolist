@@ -4,6 +4,21 @@
     box-sizing: border-box;
 }
 
+:root{
+   --sfondo-color: rgb(246, 248, 249);
+   --add_section-color: rgb(196, 203, 208);
+   --nero_testi-color: rgb(67, 72, 81);
+   --add_task-color: rgb(20, 170, 245);
+   --button_blu-color: rgb(9, 169, 237);
+   --lila-color:(171, 93, 230);
+   --verde-color: rgb(44, 198, 171);
+   --naranja-color: rgb(255, 155, 0);
+   --Magenta-color: rgb(236, 74, 157);
+   --verde_sales-color: rgb(163, 209, 22);
+   --check-color: rgb(45, 198, 171);
+   --rosso-color:rgb(255, 16, 16);
+}
+
 .logo_container{
     background-color: white;
     padding-top: 1rem;
@@ -14,15 +29,51 @@
 }
 
 .logo_img{
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     vertical-align: middle;
+}
+
+body{
+    background-color:var(--sfondo-color)
+}
+
+main{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2%;
 }
 
 .testo_logo{
     font-family: Arial;
     font-size: 60px;
-    font-weight:bold; 
+    font-weight:700; 
     display: inline-block;
     vertical-align: middle;
+}
+
+.nav{
+    background-color: white;
+    height: 70px;
+    padding-left: 60px;
+    padding-top: 20px;
+}
+
+.add_task{
+    height: 30px;
+    width: 75px;
+    background-color: rgb(20, 170, 245);
+    border-radius: 8%;
+    border: 0;
+    color: white;
+    font-weight: bold;
+}
+
+.add_section{
+    height: 30px;
+    width: 85px;
+    text-align: center;
+    border-radius: 8%;
+    border-color: rgb(196, 203, 208);
+    font-weight: bold;
 }
